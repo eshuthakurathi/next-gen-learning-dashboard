@@ -46,7 +46,7 @@ export default function Sidebar() {
           duration-300
           md:flex
           md:flex-col
-          ${isOpen ? "w-52" : "w-[40px]"}
+          ${isOpen ? "w-52" : "w-[67px]"}
         `}
       >
         {/* Top */}

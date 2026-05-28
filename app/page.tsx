@@ -14,7 +14,7 @@ export default async function Home() {
 
   const { data: courses, error } = await supabase
     .from("courses")
-    .select("*")
+    .select("id, title, progress, icon_name")
     .order("created_at", {
       ascending: false,
     });
@@ -71,9 +71,5 @@ export default async function Home() {
     );
   }
 
-  return (
-    <DashboardContent
-      courses={(courses ?? []) as Course[]}
-    />
-  );
+  return <DashboardContent courses={(courses ?? []) as Course[]} />;
 }

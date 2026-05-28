@@ -19,15 +19,16 @@ export default function ActivityCard() {
         className="
           relative
           flex
-          min-h-[220px]
+          min-h-[160px]
+          md:min-h-[180px]
           flex-col
           justify-between
           overflow-hidden
-          rounded-[28px]
+          rounded-[24px]
           border
           border-white/5
           bg-[linear-gradient(145deg,#09090b,rgba(9,9,11,0.96))]
-          p-5
+          p-4 md:p-5
           shadow-[0_0_50px_rgba(59,130,246,0.04)]
           will-change-transform
           transform-gpu
@@ -64,8 +65,10 @@ export default function ActivityCard() {
 
                 <h3
                   className="
-                    mt-3
-                    text-[40px]
+                    mt-2
+                    text-2xl
+                    sm:text-3xl
+                    lg:text-4xl
                     font-semibold
                     leading-none
                     tracking-tight
@@ -81,10 +84,10 @@ export default function ActivityCard() {
                   rounded-full
                   border
                   border-blue-500/10
-                  bg-blue-500/[0.06]
-                  px-3
+                  bg-blue-500/6
+                  px-2.5
                   py-1
-                  text-[11px]
+                  text-[10px]
                   font-medium
                   text-blue-200
                 "
@@ -95,10 +98,10 @@ export default function ActivityCard() {
 
             <p
               className="
-                mt-5
-                max-w-xs
-                text-sm
-                leading-6
+                mt-3
+                max-w-[260px]
+                text-[13px]
+                leading-5
                 text-zinc-400
               "
             >
@@ -106,10 +109,9 @@ export default function ActivityCard() {
             </p>
           </div>
 
-          {/* Chart */}
-          <div className="mt-6">
+          <div className="mt-4">
 
-            <div className="flex h-24 items-end gap-2">
+            <div className="flex h-20 items-end gap-1.5">
               {activityData.map((height, index) => (
                 <motion.div
                   key={index}
@@ -131,7 +133,7 @@ export default function ActivityCard() {
                     relative
                     flex-1
                     overflow-hidden
-                    rounded-t-[16px]
+                    rounded-t-[12px]
                     bg-gradient-to-t
                     from-blue-700
                     via-blue-600
@@ -150,16 +152,16 @@ export default function ActivityCard() {
             </div>
 
             {/* Footer */}
-            <div className="mt-4 flex items-center justify-between">
+            <div className="mt-3 flex items-center justify-between">
               
-              <span className="text-sm text-zinc-500">
+              <span className="text-[12px] text-zinc-500">
                 7 day overview
               </span>
 
               <span
                 className="
-                  text-sm
-                  font-semibold
+                  text-[13px]
+                  font-semibold   
                   text-blue-300
                 "
               >

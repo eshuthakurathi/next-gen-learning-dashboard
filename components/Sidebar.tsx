@@ -46,7 +46,7 @@ export default function Sidebar() {
           duration-300
           md:flex
           md:flex-col
-          ${isOpen ? "w-52" : "w-[67px]"}
+          ${isOpen ? "w-52" : "w-[40px]"}
         `}
       >
         {/* Top */}
@@ -189,6 +189,7 @@ export default function Sidebar() {
               alt="Student Icon"
               width={40}
               height={40}
+              loading="eager"
               className="rounded-md object-cover"
             />
           </div>

@@ -81,7 +81,7 @@ export default function HeroCard() {
                 xl:text-[54px]
               "
             >
-              Welcome back, Ixxuu
+              Welcome back, Learner
             </h1>
 
             <p

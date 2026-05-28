@@ -68,17 +68,15 @@ export default function HeroCard() {
               className="
                 mt-4
                 max-w-[760px]
-
                 text-[42px]
                 font-semibold
                 leading-[1]
                 sm:leading-[0.95]
                 tracking-[-0.05em]
                 text-white
-                text-[36px]
                 sm:text-[56px]
-                lg:text-[64px]
-                xl:text-[54px]
+                lg:text-[56px]
+                xl:text-[50px]
               "
             >
               Welcome back, Learner

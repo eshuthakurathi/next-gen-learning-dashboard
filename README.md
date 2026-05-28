@@ -132,28 +132,10 @@ create table courses (
 ```
 
 Mock seed data was inserted manually to simulate real dashboard content.
+<img width="1919" height="900" alt="Screenshot 2026-05-28 201554" src="https://github.com/user-attachments/assets/fa2c0b50-b2b7-46fd-ad5b-d5ad66a1f4d0" />
+<img width="1919" height="898" alt="Screenshot 2026-05-28 201539" src="https://github.com/user-attachments/assets/f7ed1da8-bc46-42e1-b16e-ef9386de2e97" />
+<img width="1918" height="898" alt="Screenshot 2026-05-28 201525" src="https://github.com/user-attachments/assets/b378a35b-2aa4-48f3-a226-ab9415fb8dec" />
 
----
-
-# 🎞 Animation Strategy
-
-Framer Motion was used heavily to create smooth and responsive interactions.
-
-Implemented interactions:
-
-* staggered page load animations
-* spring hover scaling
-* animated progress indicators
-* sidebar active-state transitions
-* subtle gradient hover effects
-
-To avoid layout shifts:
-
-* animations rely primarily on `transform` and `opacity`
-* spring physics were tuned for natural movement
-* transitions avoid repaint-heavy properties where possible
-
----
 
 # 📱 Responsive Design
 
@@ -215,7 +197,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 Clone the repository:
 
 ```bash id="tdx9zn"
-git clone <your-repository-url>
+git clone https://github.com/eshuthakurathi/next-gen-learning-dashboard.git
 ```
 
 Install dependencies:
@@ -241,18 +223,6 @@ Production build:
 ```bash id="y5b9y8"
 npm run build
 ```
-
----
-
-# 📌 Challenges Faced
-
-* Preventing layout shifts during animations
-* Maintaining responsiveness across breakpoints
-* Structuring reusable components cleanly
-* Managing Server/Client Component separation
-* Balancing animation quality with performance
-
----
 
 # ✅ Final Notes
 
